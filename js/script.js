@@ -57,6 +57,11 @@ function search(query)
 		window.location = "https://www.startpage.com/do/dsearch?query=" + query;
 		break;
 
+		case "-x":
+		query = query.substr(query.indexOf(' ')+1);
+		window.location = "https://searx.info/?q=" + query + "&categories=general&language=en-US";
+		break;
+
 		default:
 		window.location="https://duckduckgo.com/html?q=" + query;
 	}
