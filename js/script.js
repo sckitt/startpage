@@ -34,7 +34,7 @@ function search(query)
 
 		case "-y":
 		query = query.substr(query.indexOf(' ')+1);
-		window.location = "https://www.invidio.us/search?q=" + query;
+		window.location = "https://www.invidious.tube/search?q=" + query;
 		break;
 
 		case "-Y":
