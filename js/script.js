@@ -39,12 +39,12 @@ function search(query)
 
 		case "-y":
 		query = query.substr(query.indexOf(' ')+1);	
-		window.location = "https://invidious.snopyta.org/search?q=" + query;
+		window.location = "https://www.youtube.com/results?search_query=" + query;
 		break;
 
 		case "-Y":
-		query = query.substr(query.indexOf(' ')+1);	
-		window.location = "https://www.youtube.com/results?search_query=" + query;
+		query = query.substr(query.indexOf(' ')+1);		
+		window.location = "https://invidious.snopyta.org/search?q=" + query;
 		break;
 
 		case "-i":
