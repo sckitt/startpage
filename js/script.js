@@ -27,43 +27,43 @@ function search(query)
 		window.location = "https://www.aliexpress.com/wholesale?catId=0&initiative_id=&SearchText=" + query;
 		break;
 
+		case "-d":
+		query = query.substr(query.indexOf(' ')+1);
+		window.location = "https://duckduckgo.com/html?q=" + query;
+		break;
+
 		case "-e":
 		query = query.substr(query.indexOf(' ')+1);
 		window.location = "https://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=" + query;
 		break;
 
 		case "-y":
-		query = query.substr(query.indexOf(' ')+1);
+		query = query.substr(query.indexOf(' ')+1);	
 		window.location = "https://invidious.snopyta.org/search?q=" + query;
 		break;
 
 		case "-Y":
-		query = query.substr(query.indexOf(' ')+1);
+		query = query.substr(query.indexOf(' ')+1);	
 		window.location = "https://www.youtube.com/results?search_query=" + query;
 		break;
 
 		case "-i":
-		query = query.substr(query.indexOf(' ')+1);
+		query = query.substr(query.indexOf(' ')+1);	
 		window.location = "https://duckduckgo.com/?q=" + query + "&t=ffab&ia=images&iax=images";
 		break;
 
 		case "-q":
-		query = query.substr(query.indexOf(' ')+1);
+		query = query.substr(query.indexOf(' ')+1);	
 		window.location = "https://www.qwant.com/?q=" + query;
 		break;
 
 		case "-s":
-		query = query.substr(query.indexOf(' ')+1);
+		query = query.substr(query.indexOf(' ')+1);	
 		window.location = "https://www.startpage.com/do/dsearch?query=" + query;
 		break;
 
-		case "-x":
-		query = query.substr(query.indexOf(' ')+1);
-		window.location = "https://searx.info/?q=" + query + "&categories=general&language=en-US";
-		break;
-
 		default:
-		window.location="https://duckduckgo.com/html?q=" + query;
+		window.location= "https://searx.info/?q=" + query + "&categories=general&language=en-US";
 	}
 }
 
