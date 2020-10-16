@@ -37,21 +37,11 @@ function search(query)
 		window.location = "https://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=" + query;
 		break;
 
-		case "-y":
-		query = query.substr(query.indexOf(' ')+1);	
-		window.location = "https://www.youtube.com/results?search_query=" + query;
-		break;
-
-		case "-Y":
-		query = query.substr(query.indexOf(' ')+1);		
-		window.location = "https://invidious.snopyta.org/search?q=" + query;
-		break;
-
 		case "-i":
 		query = query.substr(query.indexOf(' ')+1);	
 		window.location = "https://duckduckgo.com/?q=" + query + "&t=ffab&ia=images&iax=images";
 		break;
-
+		
 		case "-q":
 		query = query.substr(query.indexOf(' ')+1);	
 		window.location = "https://www.qwant.com/?q=" + query;
@@ -61,7 +51,27 @@ function search(query)
 		query = query.substr(query.indexOf(' ')+1);	
 		window.location = "https://www.startpage.com/do/dsearch?query=" + query;
 		break;
+		
+		case "-w":
+		query = query.substr(query.indexOf(' ')+1);	
+		window.location = "https://www.archlinux.org/packages/?q=" + query;
+		break;
+		
+		case "-W":
+		query = query.substr(query.indexOf(' ')+1);		
+		window.location = "https://aur.archlinux.org/packages/?O=0&K=" + query;
+		break;
 
+		case "-y":
+		query = query.substr(query.indexOf(' ')+1);	
+		window.location = "https://www.youtube.com/results?search_query=" + query;
+		break;
+		
+		case "-Y":
+		query = query.substr(query.indexOf(' ')+1);		
+		window.location = "https://invidious.snopyta.org/search?q=" + query;
+		break;
+		
 		default:
 		window.location= "https://searx.info/?q=" + query + "&categories=general&language=en-US";
 	}
